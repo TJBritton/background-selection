@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Selection</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<script src="javascript.js"></script>
+<body id="bodyID">
+    <h1 id="heading">Background Selection</h1>
+    <div class="settingsbar">
+        <button class="settingsbutton" onclick="toggleCursor()" id="cursorbutton">Hide Cursor</button>
+        <button class="settingsbutton" onclick="reset()" id="resetbutton">Reset</button>
+    </div>
+    <div id="feedback">Settings are at default.</div>
+
+    <label for="numberinput1">Starting number:</label>
+    <input type="number" name="numberinput1" id="num1" autofocus><br>
+    <label for="numberinput2">Finishing number:</label>
+    <input type="number" name="numberinput2" id="num2"><br>
+    <button onclick="takeNum()">Submit</button><br>
+    <p id="countsect"></p>
+
+    <div class="flexdiv" onclick="dropdownFunc(1)">
+        <img src="images/downarrow.png" alt="Dropdown" class="arrow" id="arrow1">
+        <h2>Testing 1</h2>
+    </div>
+    <div class="dropdown" id="dropdown1">
+        <table class="dropdowntable">
+            <tr>
+                <td><img class="preview" alt="MC1" src="mc/MC1.png" id="MC1" onclick="createBackground('mc/MC1.png')"></td>
+                <td><img class="preview" alt="MC1" src="mc/MC2.png" id="MC2" onclick="createBackground('mc/MC2.png')"></td>
+                <td><img class="preview" alt="MC1" src="mc/MC3.png" id="MC3" onclick="createBackground('mc/MC3.png')"></td>
+                <td><img class="preview" alt="MC1" src="mc/MC4.png" id="MC4" onclick="createBackground('mc/MC4.png')"></td>
+                <td><img class="preview" alt="MC1" src="mc/MC5.png" id="MC5" onclick="createBackground('mc/MC5.png')"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="backgroundImg" onclick="killBackground()" id="fullDiv">
+        <img src="" alt="Background image" id="fullImg">
+    </div>
+</body>
+</html>
