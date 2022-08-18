@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Tough as Nails</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<script src="javascript.js"></script>
+<body>
+    <div id="pagetop"></div>
+    <div class="blkgnd">
+        <img src="images/gymequipment.jpg" alt="Dumbells" class="imglrg">
+        <div class="overimage">
+            <h1>Location & Classes</h1>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="notactive" title="Homepage">Home</a>
+        <a href="contact.html" class="notactive" title="Contact">Contact</a>
+        <a href="location.html" class="active" title="Location">Location</a>
+        <a href="signup.html" class="notactive" title="Sign Up">Sign Up</a>
+        <a href="links.html" class="notactive" title="Links">Links</a>
+    </div>
+    <div class="nldiv">
+        <form onsubmit="nlClicked()">
+            <p class="nltitle"><b>Sign Up for our Newsletter</b></p>
+            <label for="nlemail" class="nllabel">Email:</label>
+            <input type="email" id="nlemail" placeholder="Email address" required oninput="emailCheck(this)">
+            <input type="submit" class="nlsubmit" value="Submit">
+        </form>
+    </div>
+    <h2>Our Location</h2>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Maps location</h3>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500"src="https://maps.google.com/maps?q=2%20Rom%20Street%20Yatala%20QLD&t=&z=15&ie=UTF8&iwloc=&output=embed" class="mainiframe"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Where we are</h3>
+        <p>We can be found at 17 Chill Circuit, Yatala, Gold Coast.</p> 
+    </div>
+    <h2>When to go</h2>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Opening times</h3>
+        <p>Here are our opening times:</p>
+        <table class="st">
+            <tr class="st">
+                <th class="invisth"></th>
+                <th class="st">Monday</th>
+                <th class="st">Tuesday</th>
+                <th class="st">Wednesday</th>
+                <th class="st">Thursday</th>
+                <th class="st">Friday</th>
+                <th class="st">Saturday</th>
+                <th class="st">Sunday</th>
+            </tr>
+            <tr class="st">
+                <th class="st">Open</th>
+                <td class="st">6:00am</td>
+                <td class="st">6:00am</td>
+                <td class="st">6:00am</td>
+                <td class="st">6:00am</td>
+                <td class="st">6:00am</td>
+                <td class="st">4:00am</td>
+                <td class="st">4:00am</td>
+            </tr>
+            <tr class="st">
+                <th class="st">Close</th>
+                <td class="st">10:00pm</td>
+                <td class="st">10:00pm</td>
+                <td class="st">10:00pm</td>
+                <td class="st">10:00pm</td>
+                <td class="st">10:00pm</td>
+                <td class="st">10:00pm</td>
+                <td class="st">10:00pm</td>
+            </tr>
+        </table>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Session times</h3>
+        <p>Daily session times:</p>
+        <table class="st">
+            <tr class="st">
+                <th class="invisth"></th>
+                <th class="st">Monday</th>
+                <th class="st">Tuesday</th>
+                <th class="st">Wednesday</th>
+                <th class="st">Thursday</th>
+                <th class="st">Friday</th>
+                <th class="st">Saturday</th>
+                <th class="st">Sunday</th>
+            </tr>
+            <tr class="st">
+                <th class="st">Morning</th>
+                <td class="st">7:30am</td>
+                <td class="st">7:30am</td>
+                <td class="st">6:30am</td>
+                <td class="st">6:30am</td>
+                <td class="st">7:00am</td>
+                <td class="st">8:00am</td>
+                <td class="st">8:00am</td>
+            </tr>
+            <tr class="st">
+                <th class="st">Activities</th>
+                <td class="st">Abs</td>
+                <td class="st">Arms</td>
+                <td class="st">Legs</td>
+                <td class="st">Cardio</td>
+                <td class="st">Flexibility</td>
+                <td class="st">Back</td>
+                <td class="st">Misc.</td>
+            </tr>
+            <tr class="st">
+                <th class="st">Afternoon</th>
+                <td class="st">7:00pm</td>
+                <td class="st">7:00pm</td>
+                <td class="st">7:00pm</td>
+                <td class="st">6:30pm</td>
+                <td class="st">6:00pm</td>
+                <td class="st">8:00pm</td>
+                <td class="st">7:30pm</td>
+            </tr>
+            <tr class="st">
+                <th class="st">Activities</th>
+                <td class="st">Arms</td>
+                <td class="st">Back</td>
+                <td class="st">Cardio</td>
+                <td class="st">Legs</td>
+                <td class="st">Misc.</td>
+                <td class="st">Arms</td>
+                <td class="st">Flexibility</td>
+            </tr>
+        </table>
+    </div>
+    <div class="textsection">
+        <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+        <h3>Equipment</h3>
+        <p>Our gym has the following equipment available for all members:</p>
+        <p class="small">Power Rack / Full Rack, Squat rack / Half rack, Cable Crossover Machine, Power Tower, Adjustable Weight Bench, Hammer Strength Machine, Chest Press Machine, Pec Deck Machine, Preacher Curl Bench, Lat Pulldown Machine, Roman Chair, Leg Press Machine, Leg Extension Machine, Leg Curl Machine, Calf Raise Machine, GHD Machine, Leg Abduction Machine, Smith Machine, Abdominal Bench, Bench Press, Seated Row Machine, Hack Squat Machine, Weight Plates, Sled Push, Treadmill, Elliptical Machine, Indoor Exercise Spin Bike, Mini Exercise Bike, Rowing Machine, Recumbent Exercise Bike, Vertical Climber, Dumbbells, Barbell, Dip Bars, Push-up Bars, Pull-up Bar, Suspension Trainer, Battle Ropes, Kettlebell, Foam Roller, Resistance Bands, Plyometric Box, Jump Ropes, Ab Roller, Stability Ball, Gym Mats, Medicine Ball, Agility Ladder.</p>
+        <p>If you don't know what half of those are, then you should come to the gym and check them out.</p>
+    </div>
+    <table>
+        <tr>
+            <td><div class="centre">
+                <img alt="Treadmills" class="fullimg" src="images/gymequipment2.jpg">
+            </div></td>
+            <td><div class="centre">
+                <img alt="Barbells" class="fullimg" src="images/barbell.png">
+            </div></td>
+        </tr>
+        <tr>
+            <td><div class="centre">
+                <img alt="Bench Pressing" class="fullimg" src="images/benchpress.png">
+            </div></td>
+            <td><div class="centre">
+                <img alt="Squats" class="fullimg" src="images/squats.png">
+            </div></td>
+        </tr>
+    </table>
+    <div class="pagefooter">
+        <div class="home">
+            <a href="index.html"><img class="footerbuttonl" src="images/home.png" alt="Homepage"></a>
+        </div>
+        <div class="copyright">
+            <p class="crtext">© Tough as Nails, 2022. Website created by <a href="https://github.com/TJBritton" target="_blank" class="tblink" title="TB's Github page">Tristan Britton.</p>
+        </div>
+        <div class="backtotop">
+            <a href="#pagetop"><img class="footerbuttonr" src="images/up.png" alt="Back to top"></a>
+        </div>
+    </div>
+</body>
+</html>

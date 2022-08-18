@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Tough as Nails</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<script src="javascript.js"></script>
+<body>
+    <div id="pagetop"></div>
+    <div class="blkgnd">
+        <img src="images/signingform.png" alt="Dumbells" class="imglrg">
+        <div class="overimage">
+            <h1>Sign Up</h1>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="notactive" title="Homepage">Home</a>
+        <a href="contact.html" class="notactive" title="Contact">Contact</a>
+        <a href="location.html" class="notactive" title="Location">Location</a>
+        <a href="signup.html" class="active" title="Sign Up">Sign Up</a>
+        <a href="links.html" class="notactive" title="Links">Links</a>
+    </div>
+    <div class="nldiv">
+        <form onsubmit="nlClicked()">
+            <p class="nltitle"><b>Sign Up for our Newsletter</b></p>
+            <label for="nlemail" class="nllabel">Email:</label>
+            <input type="email" id="nlemail" placeholder="Email address" required oninput="emailCheck(this)">
+            <input type="submit" class="nlsubmit" value="Submit">
+        </form>
+    </div>
+    <h2>Sign up for Our Gym</h2>
+    <div class="signupform">
+        <form onsubmit="clicked()">
+            <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+            <h3>Contact info</h3>
+            <table>
+                <tr>
+                    <td><label for="title">Title:</label></td>
+                    <td><select name="title" required class="mainform">
+                        <option value="" disabled selected>Pick an option...</option>
+                        <option value="ms">Miss</option>
+                        <option value="mr">Mister</option>
+                        <option value="dr">Doctor</option>
+                        <option value="entity">Entity</option>
+                        <option value="lord">Lord</option>
+                        <option value="prof">Professor</option>
+                        <option value="sir">Sir</option>
+                        <option value="lady">Lady</option>
+                        <option value="master">Master</option>
+                        </select></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email address:</label></td>
+                    <td><input type="email" id="email" placeholder="Enter your Email here" required class="mainform" oninput="emailCheck(this)"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="password1">Password:</label></td>
+                    <td><input type="password" id="password1" placeholder="Enter a password" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="password2">Confirm password:</label></td>
+                    <td><input type="password" id="password2" placeholder="Enter the password again" required class="mainform" oninput="passwordCheck(this)"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="firstname">First name:</label></td>
+                    <td><input type="text" id="firstname" placeholder="Enter your first name here" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last name:</label></td>
+                    <td><input type="text" id="lastname" placeholder="Enter your last name here" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="cardnumber">Card number: </label></td>
+                    <td><input type="number" id="cardnumber" placeholder="Enter your card number" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="cardsn">Card security number:</label></td>
+                    <td><input type="number" id="cardsn" placeholder="Enter your security number" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone number: </label></td>
+                    <td><input type="text" id="lastname" placeholder="Enter your phone number" class="mainform"></td>
+                </tr>
+            </table><br>
+            <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+            <h3>Personal info</h3>
+            <table>
+                <tr>
+                    <td><label for="weight">Body weight (kg):</label></td>
+                    <td><input type="number" id="weight" placeholder="Enter your weight here" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="bday">Birthday:</label></td>
+                    <td><input type="Date" id="bday" required class="mainform"></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+                <tr>
+                    <td><label for="gender" required>Physical gender:</label></td>
+                    <td><input type="radio" name="gender" id="male">
+                        <label class="radiolabel" for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female">
+                        <label class="radiolabel" for="female">Female</label><br>
+                        <input type="radio" name="gender" id="neither">
+                        <label class="radiolabel" for="neither">Neither</label><br>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+            </table>
+            <a href="index.html" title="Homepage"><img src="images/logo.png" alt="Tough as Nails" class="logosml"></a>
+            <h3>Subscription info</h3>
+            <table>
+                <tr>
+                    <td><label for="subscription" required>Type of subscription:</label></td>
+                    <td><input type="radio" name="subscription" id="selfpaced" checked>
+                        <label class="radiolabel" for="selfpaced">Self Paced - $50/mo</label><br>
+                        <input type="radio" name="subscription" id="instructed">
+                        <label class="radiolabel" for="instructed">Instructed - $100/mo</label><br>
+                        <input type="radio" name="subscription" id="intense">
+                        <label class="radiolabel" for="intense">High Intensity - $150/mo</label><br>
+                        <input type="radio" name="subscription" id="badback">
+                        <label class="radiolabel" for="badback">Personal Training - $250/mo</label></td>
+                    <td><p class="required">This section is required.</p></td>
+                </tr>
+            </table>
+            <input type="submit" class="formbutton" value="Submit"><br><br>
+            <input type="reset" class="formbutton" value="Reset">
+        </form>
+    </div>
+    <div class="pagefooter">
+        <div class="home">
+            <a href="index.html"><img class="footerbuttonl" src="images/home.png" alt="Homepage"></a>
+        </div>
+        <div class="copyright">
+            <p class="crtext">© Tough as Nails, 2022. Website created by <a href="https://github.com/TJBritton" target="_blank" class="tblink" title="TB's Github page">Tristan Britton.</p>
+        </div>
+        <div class="backtotop">
+            <a href="#pagetop"><img class="footerbuttonr" src="images/up.png" alt="Back to top"></a>
+        </div>
+    </div>
+</body>
+</html>
